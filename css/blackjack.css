@@ -1,0 +1,129 @@
+* { 
+  max-width: 412px; 
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+body {
+  background-color: green;
+  font-family: sans-serif;
+  color: white;
+}
+
+div#marco_exterior {
+}
+
+header {
+  text-align: center;
+  height: 3em;
+  padding-bottom: 1em;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 10px;
+  height: 20px;
+}
+
+section#crupier {
+  height: 190px;
+  /* background-color: orange; */
+}
+
+section#informacion {
+  background-color: red;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+section#jugador {
+  /* background-color: blue; */
+  height: 190px;
+}
+
+.rojo { color: red; }
+
+.negro { color: black; }
+
+h1 { 
+  font-family: 'Rye', cursive;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+h1 > .rojo , .negro {
+  font-size: 1.3em;
+}
+
+h3 {
+  text-align: center;
+  /* border-top: 2px solid white; */
+  /* border-bottom: 2px solid white; */
+  margin: 5px 0px;
+  padding: 5px;
+  
+}
+
+div#puntuacion {
+  width: 100%;
+  position: fixed;
+  bottom: 90px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+div#botones {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+button {
+  padding: 10px;
+  width: 32%;
+  margin: 0;
+  font-size: 1.2em;  
+}
+
+button:first {
+  color:red;
+}
+
+
+.carta {
+  background-color: white;
+  height: 123px;
+  width: 78px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.6em;
+  text-align: left;
+  border: 1px solid darkgray;
+}
+
+div#resultado {
+  position: fixed;
+  width: 100%;
+  bottom: 125px;
+  font-size: 1.6em;
+}
+
+span#mensaje {
+  color: yellow;
+  animation: blink 0.7s linear infinite;
+}
+
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: 1;}
+100%{opacity: 0;}
+}
