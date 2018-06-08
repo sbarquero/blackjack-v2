@@ -39,5 +39,3 @@ Video explicando reglas - https://www.youtube.com/watch?v=1aqWKlOaPpA
 Juego de Blackjack simplificado para navegador web 
 
 Autor: Santiago Barquero Fecha: 07-06-2018
-
-v2 - Primera versión para Navegador "poco responsiva. Hago el desarrollo con HTML5, CSS3 y Javascript sin emplear ningún framework. Centro el diseño de esta primera prueba para una orientación vertical con una resolución de móvil de 412 x 652 pixeles.
