@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
+<html lang="es">
+
 <!-- 
 
-    Juego de Blackjack simplificado para navegador web 
+Juego de Blackjack simplificado para navegador web 
 
-    Autor: Santiago Barquero Fecha: 07-06-2018
+Autor: Santiago Barquero Fecha: 07-06-2018
 
-    v2 - Primera versión para Navegador. Hago el desarrollo con HTML5, CSS3 y Javascript sin emplear ningún framework. Centro el diseño de esta primera prueba para una orientación vertical con una resolución de móvil de 412 x 652 pixeles.
+v2 - Primera versión para Navegador "poco responsiva. Hago el desarrollo con HTML5, CSS3 y Javascript sin emplear ningún framework. Centro el diseño de esta primera prueba para una orientación vertical con una resolución de móvil de 412 x 652 pixeles.
 
 -->
-<html lang="es">
+
 <head>
   <title>Blackjack</title>
   <meta charset="utf-8">
@@ -18,8 +20,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/blackjack.css">
   <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+  <script src="js/blackjack-v2.js"></script>
 </head>
-<body>
+<body onload="blackjack.iniciarPartida();">
   <div id="marco_exterior">
     <header id="cabecera">
       <h1>
@@ -34,7 +37,6 @@
       <section id="crupier">
         <h3>Crupier</h3>
         <div id="cartas_crupier">
-          <div id="carta_crupier_0" class="carta"></div>
         </div>
       </section>
       <section id="informacion">
@@ -43,7 +45,6 @@
       <section id="jugador">
         <h3>Jugador</h3>
         <div id="cartas_jugador">
-          <div id="carta_jugador_0" class="carta"></div>
         </div>
       </section>
     </div>
@@ -51,13 +52,13 @@
       <span id="mensaje">mensaje</span>
     </div>
     <div id="puntuacion">
-      Puntos crupier: <span id="puntos_crupier">0</span>&nbsp;&nbsp;&nbsp; 
-      Puntos jugador: <span id="puntos_jugador">0</span>
+      Puntos crupier: <span id="puntos_crupier">99</span>&nbsp;&nbsp;&nbsp; 
+      Puntos jugador: <span id="puntos_jugador">99</span>
     </div>
     <div id="botones">
-      <button id="reiniciar">Reiniciar</button>
-      <button id="pasar">Pasar</button>
-      <button id="pedir_carta">Pedir Carta</button>
+      <button id="reiniciar" onclick="location.reload()">Reiniciar</button>
+      <button id="pasar" onclick="blackjack.botonPasar();">Pasar</button>
+      <button id="pedir_carta" onclick="blackjack.botonPedirCarta();">Pedir Carta</button>
     </div>
     <footer id="pie">
       &copy; Santiago Barquero - Junio-2018
