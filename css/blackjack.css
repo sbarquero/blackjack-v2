@@ -1,12 +1,13 @@
 * { 
-  max-width: 405px; 
+  max-width: 412px; 
   align-content: center;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
+
 body {
-  background-color: green;
+  background-color: darkgreen;
   font-family: sans-serif;
   color: white;
   margin: 0;
@@ -15,39 +16,13 @@ body {
 div#marco_exterior {
   position: relative;
   height: 650px;
-  
 }
 
 header {
-  text-align: center;
   height: 3em;
-  padding-bottom: 1em;
-}
-
-#pie {
-  font-weight: bold;
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  padding-top: 10px;
-  height: 20px;
-}
-
-section#crupier {
-  height: 190px;
-  /* background-color: orange; */
-}
-
-section#informacion {
-  background-color: red;
-  text-align: center;
-  font-weight: bold;
-  padding: 0.5em;
-}
-
-section#jugador {
-  /* background-color: blue; */
-  height: 190px;
+  background-color: #58290a;
+  padding-bottom: 5px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .rojo { color: red; }
@@ -57,20 +32,56 @@ section#jugador {
 h1 { 
   font-family: 'Rye', cursive;
   margin: 0;
-  padding-bottom: 10px;
 }
 
 h1 > .rojo , h1 > .negro {
-  font-size: 1.25em;
+  font-size: 1.3em;
 }
 
 h3 {
+  letter-spacing: 0.4em;
   text-align: center;
-  /* border-top: 2px solid white; */
-  /* border-bottom: 2px solid white; */
   margin: 5px 0px;
   padding: 5px;
 }
+
+#pie {
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 10px;
+  height: 20px;
+  color: #70b270;
+}
+
+section#crupier {
+  height: 190px;
+}
+
+section#informacion {
+  background-color: red;
+  font-weight: bold;
+  padding: 0.5em;
+  font-size: 1.05em;
+  border-radius: 10px;
+}
+
+section#jugador {
+  height: 190px;
+}
+
+div#mensaje {
+  width: 100%;
+  position: absolute;
+  background-color: yellow;
+  color:green;
+  bottom: 120px;
+  font-size: 1.3em;
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+
 
 div#puntuacion {
   width: 100%;
@@ -84,138 +95,30 @@ div#botones {
   position: absolute;
   bottom: 30px;
   width: 100%;
-  margin: 0;
-  border: 0;
-  padding: 0;
 }
 
 button {
   padding: 10px;
   width: 32%;
-  margin: 0;
   font-size: 1.2em;  
+  border-radius: 15px;
+  color: #d3e8d3;
+  background-color: #3d563d;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-button:first {
-  color:red;
+button:disabled {
+  opacity: 0.4;
 }
 
-.carta {
+div.carta {
   background-color: white;
-  height: 123px;
-  width: 78px;
+  height: 120px;
+  width: 80px;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 7px;
   font-size: 1.6em;
   text-align: left;
   border: 1px solid darkgray;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
 }
-
-div#resultado {
-  position: absolute;
-  width: 100%;
-  bottom: 125px;
-  font-size: 1.2em;
-}
-
-span#mensaje {
-  color: yellow;
-  animation: blink 2.0s linear infinite;
-}
-
-@keyframes blink{
-0%{opacity: 0;}
-50%{opacity: 1;}
-100%{opacity: 0;}
-}
-
-div#carta_crupier_0 {
-  position: absolute;
-  left: -5px;
-}
-
-div#carta_crupier_1 {
-  position: absolute;
-  left: 35px;
-}
-
-div#carta_crupier_2 {
-  position: absolute;
-  left: 75px;
-}
-
-div#carta_crupier_3 {
-  position: absolute;
-  left: 115px;
-}
-
-div#carta_crupier_4 {
-  position: absolute;
-  left: 155px;
-}
-
-div#carta_crupier_5 {
-  position: absolute;
-  left: 195px;
-}
-
-div#carta_crupier_6 {
-  position: absolute;
-  left: 235px;
-}
-
-div#carta_crupier_7 {
-  position: absolute;
-  left: 275px;
-}
-
-div#carta_crupier_8 {
-  position: absolute;
-  left: 315px;
-}
-
-div#carta_jugador_0 {
-  position: absolute;
-  left: -5px;
-}
-
-div#carta_jugador_1 {
-  position: absolute;
-  left: 35px;
-}
-
-div#carta_jugador_2 {
-  position: absolute;
-  left: 75px;
-}
-
-div#carta_jugador_3 {
-  position: absolute;
-  left: 115px;
-}
-
-div#carta_jugador_4 {
-  position: absolute;
-  left: 155px;
-}
-
-div#carta_jugador_5 {
-  position: absolute;
-  left: 195px;
-}
-
-div#carta_jugador_6 {
-  position: absolute;
-  left: 235px;
-}
-
-div#carta_jugador_7 {
-  position: absolute;
-  left: 275px;
-}
-
-div#carta_jugador_8 {
-  position: absolute;
-  left: 315px;
-}
-

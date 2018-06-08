@@ -176,12 +176,14 @@ function strMano(mano) {
 
 function htmlArrayCartas(sujeto, cartas) {
   var str = "";
-  var num_cartas = cartas.length;
+  var numCartas = cartas.length;
   var NUM_CARTAS_TOTALES = 9;
-  var desplazamiento = Math.floor((NUM_CARTAS_TOTALES - num_cartas + 1) / 2);
+  var desplazamiento = 400 / 2 -((numCartas+1)*20);
   for(var i = 0; i < cartas.length; i++) {
-    str += "<div id=\"carta_" + sujeto +"_" + (i + desplazamiento) + "\" class=\"carta " + 
-    cartas[i].color + "\">" +  cartas[i].simbolo + "<br>&" + cartas[i].palo + ";</div>";
+    str += "<div class=\"carta " + 
+    cartas[i].color + "\" style=\"position: absolute; left: " +
+      (desplazamiento + i * 40) + "px;\">" +  cartas[i].simbolo + 
+      "<br>&" + cartas[i].palo + ";</div>";
   }
   return str;
 }
@@ -284,7 +286,7 @@ var blackjack = {
       else {
         if (puntosCrupier > puntosJugador) {
           console.log("Crupier obtiene más puntos"); 
-          mensaje = "¡Lo siento has perdido la partida!\n" + 
+          mensaje = "¡Lo siento has perdido la partida!<br>" + 
               "El crupier obtiene más puntuación\n";
         } 
         else {
@@ -295,7 +297,7 @@ var blackjack = {
     } 
     else { // sino es que el jugador se ha pasado de 21
       console.log("-------- Jugador se ha pasado de 21 ---------");
-      mensaje = "¡Lo siento, has perdido la partida!\nTe has pasado de 21.\n";
+      mensaje = "¡Lo siento, has perdido la partida!<br>Te has pasado de 21.\n";
     }
 
     console.log("--------------- Resultado -------------------");
