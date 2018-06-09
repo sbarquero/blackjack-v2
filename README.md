@@ -1,5 +1,7 @@
 # Blackjack para navegador web
 
+Juego de Blackjack simplificado para navegador web 
+
 **Autor :** Santiago Barquero   **Fecha:** 08/06/2018
 
 ## Descripción
@@ -34,8 +36,3 @@ Hay que lanzar el fichero **blackjack.html**.
 Blackjack en Wikipedia - https://es.wikipedia.org/wiki/Blackjack
 
 Video explicando reglas - https://www.youtube.com/watch?v=1aqWKlOaPpA
-
-
-Juego de Blackjack simplificado para navegador web 
-
-Autor: Santiago Barquero Fecha: 07-06-2018
