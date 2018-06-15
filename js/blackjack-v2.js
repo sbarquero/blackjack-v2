@@ -178,11 +178,17 @@ function htmlArrayCartas(sujeto, cartas) {
   var str = "";
   var numCartas = cartas.length;
   var NUM_CARTAS_TOTALES = 9;
-  var desplazamiento = 400 / 2 -((numCartas+1)*20);
+  var anchoCarta = 40;
+  // 12 es la suma del padding y border derechos e izquierdos
+  var paddingBorderCarta = 12; 
+  var anchoBody = document.body.clientWidth;
+  // 12 es la suma del padding y border derechos e izquierdos
+  var desplazamiento = (anchoBody - paddingBorderCarta) / 2 - 
+      (numCartas + 1) * anchoCarta/2;
   for(var i = 0; i < cartas.length; i++) {
     str += "<div class=\"carta " + 
     cartas[i].color + "\" style=\"position: absolute; left: " +
-      (desplazamiento + i * 40) + "px;\">" +  cartas[i].simbolo + 
+      (desplazamiento + i * anchoCarta) + "px;\">" +  cartas[i].simbolo + 
       "<br>&" + cartas[i].palo + ";</div>";
   }
   return str;

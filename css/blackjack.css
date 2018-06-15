@@ -59,7 +59,7 @@ section#crupier {
   height: 190px;
 }
 
-section#informacion {
+div#informacion {
   background-color: red;
   font-weight: bold;
   padding: 0.5em;

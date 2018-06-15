@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="es">
-<!-- 
-Juego de Blackjack simplificado para navegador web 
+<!--
+Juego de Blackjack simplificado para navegador web
 
 Autor: Santiago Barquero Fecha: 07-06-2018
 
-v2 - Primera versión para Navegador "poco responsiva. Hago el desarrollo con 
-HTML5, CSS3 y Javascript sin emplear ningún framework. Centro el diseño de 
-esta primera prueba para una orientación vertical con una resolución de móvil 
+v2 - Primera versión para Navegador "poco responsiva. Hago el desarrollo con
+HTML5, CSS3 y Javascript sin emplear ningún framework. Centro el diseño de
+esta primera prueba para una orientación vertical con una resolución de móvil
 de 412 x 652 pixeles.
 
 -->
@@ -25,11 +25,17 @@ de 412 x 652 pixeles.
   <script src="js/blackjack-v2.js"></script>
 </head>
 <body onload="blackjack.iniciarPartida();">
+  <noscript>
+    <p>La página que estás viendo requiere para su funcionamiento el uso de
+      JavaScript. Si lo has deshabilitado intencionadamente, por favor vuelve a
+      activarlo.
+    </p>
+  </noscript>
   <div id="marco_exterior">
     <header id="cabecera">
       <h1>
         <span class="rojo">&hearts;</span><span class="negro">&spades;</span>
-        BlackJack 
+        BlackJack
         <span class="negro">&clubs;</span><span class="rojo">&diams;</span>
       </h1>
     </header>
@@ -39,9 +45,9 @@ de 412 x 652 pixeles.
         <div id="cartas_crupier">
         </div>
       </section>
-      <section id="informacion">
+      <div id="informacion">
         El crupier debe pedir con 16 y plantarse con 17
-      </section>
+      </div>
       <section id="jugador">
         <h3>Jugador</h3>
         <div id="cartas_jugador">
@@ -52,7 +58,7 @@ de 412 x 652 pixeles.
       mensaje
     </div>
     <div id="puntuacion">
-      Puntos crupier: <span id="puntos_crupier">99</span>&nbsp;&nbsp;&nbsp; 
+      Puntos crupier: <span id="puntos_crupier">99</span>&nbsp;&nbsp;&nbsp;
       Puntos jugador: <span id="puntos_jugador">99</span>
     </div>
     <div id="botones">
