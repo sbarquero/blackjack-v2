@@ -7,6 +7,8 @@ Juego de Blackjack simplificado para navegador web
 ## Descripción
 En este proyecto voy a desarrollar el juego de Blackjack simplificado para el navegador web, en el que el crupier va a jugar contra un solo jugador.
 
+![Captura de pantalla del juego](captura_pantalla.png)
+
 ## Reglas del juego
 A continuación expongo las **reglas simplificadas** para este proyecto, ya que las reales son más complejas.
 
@@ -27,7 +29,7 @@ En la consola voy visualizando información para poder comprobar el correcto fun
 Voy a utilizar los siguientes tres objetos: Baraja, Crupier y Jugador. Aunque genero una baraja en cada inicio de la función y el crupier se queda con una copia que es la que el baraja y reparte.
 
 ## Versiones
-v2 - Primera versión para Navegador "poco responsiva. Hago el desarrollo con HTML5, CSS3 y Javascript sin emplear ningún framework. Centro el diseño de esta primera prueba para una orientación vertical con una resolución de móvil de 412 x 652 pixeles.
+v2 - Primera versión para Navegador "poco responsiva". Hago el desarrollo con HTML5, CSS3 y Javascript sin emplear ningún framework. Centro el diseño de esta primera prueba para una orientación vertical con una resolución de móvil de 412 x 652 pixeles.
 
 ## Puesta en marcha
 Hay que lanzar el fichero **blackjack.html**.
